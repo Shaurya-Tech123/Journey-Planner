@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Journey Planner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <main class="main-content">
+    <div class="header">
+      <h1>🚀 Journey Planner</h1>
+      <button id="darkModeToggle">🌙 Dark Mode</button>
+    </div>
+
+    <div class="selectors">
+      <select id="source">
+        <option value="" disabled selected>Select Source</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Agra">Agra</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Dehradun">Dehradun</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Guwahati">Guwahati</option>
+        <option value="Ujjain">Ujjain</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Amritsar">Amritsar</option>
+      </select>
+
+      <select id="destination">
+<option value="" selected hidden>Select Source</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Agra">Agra</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Dehradun">Dehradun</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Guwahati">Guwahati</option>
+        <option value="Ujjain">Ujjain</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Amritsar">Amritsar</option>
+      </select>
+      
+      <select id="transportMode">
+        <option value="car">Car 🚗</option>
+        <option value="bike">Bike 🏍️</option>
+        <option value="bus">Bus 🚌</option>
+        <option value="train">Train 🚆</option>
+      </select>
+      
+      <button id="findRouteBtn">Find Route</button>
+      <button id="toggleSidebarBtn">Toggle Images</button>
+    </div>
+
+    <div id="result"></div>
+    <div id="weather"></div>
+    
+    <div id="map"></div>
+  </main>
+
+  <aside class="sidebar" id="sidebar">
+    <h3>Destination Images</h3>
+    <div id="imageContainer" class="image-container"></div>
+  </aside>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
